@@ -55,13 +55,22 @@
 </head>
 <body>
   <div class="center-container">
-    <form id="mainform" action="home.html">
+    <form id="mainform" action="getotp.html">
       <div class="form-title">Login</div>
       <div class="mb-3">
-        <label for="username" class="form-label">mobile no :</label>
-        <input type="number" id="username" class="form-control" required>
-      </div>
-      
+  <label for="username" class="form-label">Mobile No:</label>
+  <input 
+    type="number" 
+    id="username" 
+    class="form-control" 
+    pattern="[0-9]{10}" 
+    inputmode="numeric"
+    maxlength="10" 
+    placeholder="Enter 10-digit number" 
+    required>
+  <div class="form-text">Please enter a 10-digit mobile number.</div>
+</div>
+
       <div class="d-grid">
         <input class="btn btn-primary" type="submit" value="get otp now !">
       </div>
