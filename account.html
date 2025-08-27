@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Enter OTP</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <style>
-    .myotpinput {
-      border: 1px solid #000;
-      width: 50px;
-      height: 50px;
-      border-radius: 7px;
-      text-align: center;
-      font-size: 1.2rem;
-    }
-    body{
-      background-image: url(backgroundpageforotp.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <nav class="navbar bg-body-tertiary  border rounded">
+    <nav class="navbar bg-body-tertiary  border rounded">
         <div class="container-fluid">
             <a class="navbar-brand"><img src="flipkartlogo2.jpeg" class="rounded ms-3" height="60px" width="140px"
                     alt=""></a>
@@ -54,27 +40,18 @@
             </form>
         </div>
     </nav>
-  <div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="card shadow p-4 text-center" style="max-width: 400px; width: 100%;">
-      <h3 class="mb-4 fw-bold">Enter your OTP</h3>
-      
-      <form action="home.html" >
-        <div class="d-flex justify-content-between mb-4">
-          <input type="text" maxlength="1" class="myotpinput" >
-          <input type="text" maxlength="1" class="myotpinput" >
-          <input type="text" maxlength="1" class="myotpinput" >
-          <input type="text" maxlength="1" class="myotpinput" >
+    <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow p-4 bg-light">
+          <h2 class="text-primary mb-4 text-center">User Profile</h2>
+          <p><strong>Name:</strong> Manan Trivedi</p>
+          <p><strong>Email:</strong> manan@example.com</p>
+          <p><strong>Phone:</strong> +91 9999999999</p>
+        <p><strong>Address:</strong> xyz......</p>
+          
         </div>
+      </div>
 
-        <div class="d-grid mb-3">
-          <input type="submit" value="Submit OTP" class="btn btn-primary">
-        </div>
-        
-        <div class="d-grid">
-          <button type="button" class="btn btn-outline-secondary">Resend OTP</button>
-        </div>
-      </form>
-    </div>
-  </div>
 </body>
 </html>
