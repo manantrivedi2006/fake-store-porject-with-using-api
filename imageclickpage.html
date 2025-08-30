@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        .sidebar {
+            border-right: 1px solid #ddd;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+
+        .filter-section h6 {
+            font-size: 16px;
+            
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .filter-section label {
+            margin-left: 5px;
+            font-size: 14px;
+         
+        }
+
+        .filter-section input[type="checkbox"] {
+            accent-color: #2874f0;
+        }
+        
+  
+  
+  .card {
+    flex: 1;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card-img-top {
+    height: 200px; 
+    object-fit: contain;
+    background: #fff; 
+  }
+  .card-title {
+    min-height: 42px; 
+  }
+</style>
+
+    
+</head>
+
+<body>
+
+    
+    <nav class="navbar bg-body-tertiary border rounded">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="flipkartlogo2.jpeg" class="rounded ms-3" height="60px" width="140px" alt="">
+            </a>
+            <form class="d-flex align-items-center" role="search">
+                <input class="form-control me-5" type="search" placeholder="Search for products, brands and more"
+                    aria-label="Search" style="width: 500px;" />
+
+                <a class="me-3 ms-3 bi bi-cart3" href="addtocard.html"
+                    style="font-size: 30px; text-decoration: none; color: black;"></a>
+                <a class="d-flex me-3 ms-3" href="#">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                        width="38px" alt="Become a Seller">
+                </a>
+                <a href="home.html" class="btn btn-outline-dark align-items-center d-flex">Home</a>
+                <a href="login.html" class="btn btn-outline-primary ms-2 me-2 d-flex align-items-center">
+                    <i class="bi bi-person-circle"></i><span class="ms-1">Login</span>
+                </a>
+                <a href="account.html" class="btn btn-outline-primary ms-2 me-2 d-flex align-items-center">
+                    <i class="bi bi-person-circle"></i><span class="ms-1">Account</span>
+                </a>
+                <a href="#" class="d-flex ms-3 me-3" style="color: black;">
+                    <i class="bi bi-three-dots-vertical mt-1" style="font-size: 25px;"></i>
+                </a>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+
+            <!-- sidebar..... -->
+            <div class="col-md-3 sidebar p-3">
+                <h5>Filters</h5>
+                <button class="btn btn-sm btn-link p-0 mb-3">CLEAR ALL</button>
+
+                <div class="filter-section mb-4">
+                    <h6>Ratings</h6>
+                    <div><input type="checkbox" id="3star"><label for="3star">3★ & above</label></div>
+                    <div><input type="checkbox" id="4star"><label for="4star">4★ & above</label></div>
+                </div>
+
+                <div class="filter-section mb-4">
+                    <h6>Type</h6>
+                    <div><input type="checkbox" id="bluetooth"><label for="bluetooth">Bluetooth</label></div>
+                    <div><input type="checkbox" id="trueWireless"><label for="trueWireless">True Wireless</label></div>
+                </div>
+
+                <div class="filter-section">
+                    <h6>Brand</h6>
+                    <input type="text" class="form-control form-control-sm mb-2" placeholder="Search Brand">
+                    <div><input type="checkbox" id="boat"><label for="boat">boAt</label></div>
+                    <div><input type="checkbox" id="oneplus"><label for="oneplus">OnePlus</label></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-9 p-3">
+                <h3>Product Listings</h3>
+                <div class="container">
+                    <!-- section one -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/z/u/k/-original-imagsgggy5qguq6d.jpeg?q=70"
+                                    class="card-img-top p-0 m-0" style="border-radius:0;">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        Mivi Duopods D4, 50Hrs Playtime, HD Call, Fast Charging...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹699</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹2,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">76% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                               <img loading="eager" class="card-img-top p-0 m-0"  src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/z/o/r/-original-imah45pfaf87c3uk.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        Number SuperBuds 555 with Dual Pair, 66H Battery, 32dB ...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹999</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹7,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">86% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                               <img loading="eager" class="card-img-top p-0 m-0" src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/n/6/0/-original-imahewgqtx837ruq.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        Noise Buds VS102 Plus with 70 Hrs Playtime, Environment...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹999</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹3,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">75% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                                <img loading="eager" class="card-img-top p-0 m-0"  src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/m/s/-original-imah3zvdthupfejc.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        boAt Airdopes 161/163 with ASAP Charge & 40 HRS Playbac...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹999</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹2,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">76% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section 2 -->
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                               <img class="card-img-top p-0 m-0" src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/z/l/b/rma-2306-realme-original-imahe6hbzzzgkanp.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        realme Buds T110 (RMA2306) with AI ENC for calls, 38 ho...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹1299</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹2,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">56% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                               <img  class="card-img-top p-0 m-0"  src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/5/b/b/-original-imahdt83yzyjqqhe.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                      boAt Airdopes 219, 40H Battery, Free Music Streaming & ...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹1099</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹3,990</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">72% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                                <img  class="card-img-top p-0 m-0" src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/d/b/h/-original-imaha6btcgqdqy5e.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        realme Buds T200 Lite with 12.4mm Driver, 48hrs Playbac...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹1399</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹2,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">76% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm" style="width: 220px;">
+                               <img  class="DByuf4"  src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/w/j/b/-original-imahdt83dy6dgzpk.jpeg?q=70">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1" style="font-size: 14px; font-weight: 500;">
+                                        boAt Airdopes 219, 40H Battery, Free Music Streaming & ...
+                                    </h6>
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="mb-0" style="font-weight: 600;">₹1099</h6>
+                                        <span class="ms-2 text-muted"
+                                            style="font-size:13px; text-decoration: line-through;">₹3,999</span>
+                                        <span class="ms-2" style="color: green; font-size:13px;">76% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+        <!-- footer -->
+     <footer class="bg-dark text-light  pt-4 mt-3">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="fw-bold">ABOUT</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Flipkart Stories</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Press</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Corporate Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="fw-bold">GROUP COMPANIES</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Myntra</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cleartrip</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shopsy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="fw-bold">HELP</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Payments</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shipping</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cancellation & Returns</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="fw-bold">CONSUMER POLICY</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Cancellation & Returns</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Terms Of Use</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Security</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Sitemap</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Grievance Redressal</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">EPR Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 mb-4">
+                    <h6 class="fw-bold">MAIL US:</h6>
+                    <p class="small mb-0">
+                        Flipkart Internet Private Limited,<br>
+                        Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                        Outer Ring Road, Devarabeesanahalli Village,<br>
+                        Bengaluru, 560103, Karnataka, India
+                    </p>
+                </div>
+                <div class="col-md-2 col-12 mb-4">
+                    <h6 class="fw-bold">REGISTERED OFFICE ADDRESS:</h6>
+                    <p class="small mb-0">
+                        Flipkart Internet Private Limited,<br>
+                        Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                        Outer Ring Road, Devarabeesanahalli Village,<br>
+                        Bengaluru, 560103, Karnataka, India<br>
+                        CIN : U51109KA2012PTC066107<br>
+                        Telephone: 044-45614700 / 044-67415800
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-secondary my-2">
+
+        <div class="container-fluid px-5 pb-3">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="d-flex flex-wrap gap-3 small">
+                    <a href="#" class="text-light text-decoration-none">Become a Seller</a>
+                    <a href="#" class="text-light text-decoration-none">Advertise</a>
+                    <a href="#" class="text-light text-decoration-none">Gift Cards</a>
+                    <a href="#" class="text-light text-decoration-none">Help Center</a>
+                </div>
+                <div class="small">© 2007-2025 Flipkart.com</div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
