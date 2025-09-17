@@ -1,0 +1,50 @@
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 70px;
+
+        }
+
+
+        img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        } */
+
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}

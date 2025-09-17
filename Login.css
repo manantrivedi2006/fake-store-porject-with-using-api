@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-left,
+.login-right {
+  flex: 1 1 300px;
+  padding: 30px;
+}
+
+.login-left {
+  background: #e4dcdc8f;
+  text-align: center;
+}
+
+.login-left h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.login-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-right h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  background: #2874f0;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  background: #0d6efd;
+}
+
+.divider {
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+.otp-link {
+  text-decoration: none;
+  color: #2874f0;
+}
+
+.otp-link:hover {
+  text-decoration: underline;
+}
